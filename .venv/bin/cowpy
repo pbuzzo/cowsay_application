@@ -1,0 +1,5 @@
+#!/Users/test/quarter-3/cowsay_application/.venv/bin/python3
+# encoding: utf-8
+
+from cowpy import cow
+cow.main()

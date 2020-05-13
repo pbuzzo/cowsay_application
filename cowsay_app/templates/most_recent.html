@@ -1,0 +1,25 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <div id="main">
+        <div class='header'>
+            <h1>Most Recent CowSay Translations</h1>
+            <hr class="rounded">
+        </div>
+        <BR>
+        <p><a href="{% url 'home' %}"> Translation Page </a></p>  
+        <section class="history_box">
+            <ol>
+                {% for i in stack %}
+                    <li>{{ i }}</li>
+                    <br>
+                    <HR>
+                {% endfor %}
+            </ol>
+            {{ word }}
+        </section>
+    </div>
+</body>

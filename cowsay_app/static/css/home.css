@@ -1,0 +1,91 @@
+a:link {
+    color: gray;
+}
+
+a:visited {
+    color: #97f2f4;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: teal;
+}
+
+body {
+    background: url("https://staticshare.america.gov/uploads/2019/05/shutterstock_533100223.jpg");
+    /* opacity: 0.4; */
+    /* background: #357db5; */
+    padding-left: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+p {
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.header {
+    background: url("https://staticshare.america.gov/uploads/2019/05/shutterstock_533100223.jpg");
+    border: 3px solid white;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 5px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 95px;
+    width: 45%;
+}
+
+.boxed {
+    background: #357db5;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.cowsay {
+    background: #bcd9ef;
+}
+
+h1 {
+    font-family: Bungee Inline;
+    font-weight: lighter;
+    font-size: 46px;
+    font-style: italic;
+    display: inline;
+    /* position: relative;
+    top: 18px;
+    left: 10px; */
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+.history_box {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #bcd9ef;
+}
+
+#cow_img {
+    width: 20%;
+    height: 20%;
+    display: inline;
+    /* float: left; */
+    /* background: #555; */
+}
+
+

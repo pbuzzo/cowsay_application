@@ -1,3 +1,35 @@
-<p>Hello, World!</p>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
 
-{{ data }}
+<body>
+    <div id='main'>
+        <div class='header'>
+            <h1>CowSay Translator</h1>
+            <hr class="rounded">
+            <p>Your Go-To For All Things "Moo" </p>
+            <hr class="rounded">
+        </div>
+        <BR>
+        <h2><a href="{% url 'most_recent' %}"> Most Recent Translations</a></h2>
+        <section class="boxed">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }} 
+                <input type="submit" value="Translate to Cowsay">
+            </form>
+            <!-- <pre>
+                {% for item in decoded %}
+                    {{ item }}
+                {% endfor %}
+            </pre> -->
+            {% if decoded %}
+                <HR>
+                <pre class='cowsay'>
+                    {{ decoded }}
+                </pre>
+            {% endif %}
+        </section>
+    </div>
+</body>
